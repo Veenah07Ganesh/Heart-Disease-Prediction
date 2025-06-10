@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+    <noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper" class="fade-in">
+
+    <!-- Intro -->
+    <div id="intro">
+        <h1>Heart Disease<br />Prediction</h1>
+        <p>Welcome! This tool uses real health data and machine learning to help you<br />
+            understand your risk of developing heart disease.</p>
+        <ul class="actions">
+            <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <a href="{{ url_for('prediction_page') }}" class="logo">Heart Disease Prediction</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li class="active"><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('symptoms') }}">Symptoms</a></li>
+            <li><a href="{{ url_for('prediction_page') }}">Prediction</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+        <!-- Featured Post -->
+        <article class="post featured">
+            <header class="major">
+                <h2>Heart Disease</h2>
+            </header>
+             <p class="prediction-paragraph">Heart disease, also known as cardiovascular disease, refers to a broad range of conditions that affect 
+                        the heart and blood vessels. It is one of the leading causes of death globally, claiming millions of lives each year. 
+                        Common types of heart disease include coronary artery disease, heart failure, arrhythmia, and congenital heart defects. 
+                        These conditions can develop silently over time and often remain undetected until serious complications arise, such as heart attacks or strokes.</p>
+
+                    <p class="prediction-paragraphtwo">The primary risk factors for heart disease include high blood pressure, high cholesterol, diabetes, obesity, smoking, 
+                    poor diet, physical inactivity, and excessive alcohol consumption. Genetics and age also play significant roles in determining an 
+                    individual's risk level. Fortunately, heart disease is largely preventable through early detection and proactive lifestyle changes.</p>
+
+                    <p class="prediction-paragraphthree">Modern advancements in medicine and technology, including machine learning and predictive analytics, have made it possible to assess a 
+                    person’s risk of heart disease with greater accuracy. These tools analyze health data and behavioral patterns to provide early warnings and 
+                    personalized recommendations. By raising awareness and promoting regular health screenings, we can reduce the prevalence of heart disease and encourage healthier communities.</p>
+
+            <style>
+                .prediction-paragraph {
+                    font-style: normal;             /* remove italic */
+                    text-align: left;              /* align to left instead of justify or center */
+                    font-size: 1rem;
+                    line-height: 1.8;
+                    font-family: 'Merriweather', Georgia, serif;
+                    background-color: #f7f7f7;
+                    padding: 1rem 1.5rem;
+                    border-left: 4px solid #18bfef;
+                    border-radius: 4px;
+                    margin-top: 2rem;
+                    color: #212931;
+                }
+                .prediction-paragraphtwo {
+                    font-style: normal;             /* remove italic */
+                    text-align: left;              /* align to left instead of justify or center */
+                    font-size: 1rem;
+                    line-height: 1.8;
+                    font-family: 'Merriweather', Georgia, serif;
+                    background-color: #f7f7f7;
+                    padding: 1rem 1.5rem;
+                    border-right: 4px solid #ba53ff;
+                    border-radius: 4px;
+                    margin-top: 2rem;
+                    color: #212931;
+                }
+                .prediction-paragraphthree {
+                    font-style: normal;             /* remove italic */
+                    text-align: left;              /* align to left instead of justify or center */
+                    font-size: 1rem;
+                    line-height: 1.8;
+                    font-family: 'Merriweather', Georgia, serif;
+                    background-color: #f7f7f7;
+                    padding: 1rem 1.5rem;
+                    border-left: 4px solid #bb1c6b;
+                    border-radius: 4px;
+                    margin-top: 2rem;
+                    color: #212931;
+                }
+                .prediction-paragraphfour {
+                    font-style: normal;             /* remove italic */
+                    text-align: left;              /* align to left instead of justify or center */
+                    font-size: 1rem;
+                    line-height: 1.8;
+                    font-family: 'Merriweather', Georgia, serif;
+                    background-color: #f7f7f7;
+                    padding: 1rem 1.5rem;
+                    border-top: 4px solid #5c0216;
+                    border-radius: 4px;
+                    margin-top: 2rem;
+                    color: #212931;
+                }
+            </style>
+            
+            <a href="#" class="image main">
+                <img src="{{ url_for('static', filename='assets/images/pic01.jpg') }}" alt="" />
+            </a>
+            <p class="prediction-paragraphfour"> Understanding the causes and symptoms of heart disease is crucial for prevention, early intervention, and 
+            improving overall health outcomes. When people are informed about common risk factors such as high blood pressure, poor diet, lack of physical activity, 
+            and smoking, they are more likely to adopt healthier habits and seek timely medical advice. Early signs like chest discomfort, shortness of breath, and unusual fatigue should never be ignored, as recognizing them early can lead to quicker diagnosis and effective treatment. 
+            Raising awareness and encouraging proactive care can significantly reduce the impact of heart disease in our communities. </p>
+            <div class="cta-box-alt">
+                <p><span class="icon">👉</span> To learn more about specific symptoms and their underlying causes, click below.</p>
+                <a href="{{ url_for('symptoms') }}" class="button large">Explore Symptoms & Causes</a>
+            </div>
+
+            <style>
+                .cta-box-alt {
+                    border: 2px dashed #18bfef;
+                    background-color: rgba(24, 191, 239, 0.05);
+                    padding: 1.5rem;
+                    border-radius: 8px;
+                    text-align: center;
+                    margin-top: 2rem;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    color: #212931;
+                }
+
+                .cta-box-alt .icon {
+                    font-size: 1.25rem;
+                    margin-right: 0.5rem;
+                    vertical-align: middle;
+                }
+
+                .cta-box-alt p {
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                    font-weight: 600;
+                    color: #212931;
+                }
+
+                .cta-button-alt {
+                    display: inline-block;
+                    background-color: transparent;
+                    border: 2px solid #18bfef;
+                    color: #18bfef;
+                    padding: 0.6rem 1.4rem;
+                    border-radius: 4px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    letter-spacing: 0.05em;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                }
+
+                .cta-button-alt:hover {
+                    background-color: #18bfef;
+                    color: white;
+                    box-shadow: 0 0 10px rgba(206, 159, 250, 0.4);
+                }
+
+            </style>
+           
+                <p><br><br></p>
+        </article>
+    </div>
+
+
+    <!-- Footer -->
+    <div id="copyright">
+        <ul>
+            <li>&copy; Veenah Ganesh</li>
+            <li>Heart Disease Prediction</li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+</body>
+</html>

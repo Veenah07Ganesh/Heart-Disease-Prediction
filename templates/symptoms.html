@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+    <noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
+</head>
+<body class="is-preload">
+
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <a href="{{ url_for('prediction_page') }}" class="logo">Heart Disease Prediction</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li class="active"><a href="{{ url_for('symptoms') }}">Symptoms</a></li>
+            <li><a href="{{ url_for('prediction_page') }}">Prediction</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Intro -->
+        <article class="post featured">
+            <header class="major">
+                <h1 style="color: #0e1c2b">Symptoms & Causes</h1>
+                <p style="text-align: left">Heart disease often develops silently, with symptoms that may not appear until significant damage has already occurred. 
+					Many individuals are unaware they have a heart condition until they experience a major event such as a heart attack or stroke. 
+					This makes it crucial to recognize early warning signs like chest pain, shortness of breath, fatigue, dizziness, or irregular heartbeat.<br>
+					Equally important is understanding the root causes behind heart disease. These can include high blood pressure, high cholesterol, diabetes, 
+					smoking, poor diet, physical inactivity, obesity, and chronic stress. In some cases, family history and genetics also play a major role in increasing risk.
+					By being informed about these causes and symptoms, individuals can take proactive steps toward prevention, such as regular checkups, 
+					ealthy lifestyle choices, and early medical intervention. Recognizing and addressing these factors early can make a life-saving difference.</p>
+            </header>
+        </article>
+
+        <!-- Symptoms Section -->
+        <section class="post">
+            <header class="major">
+                <h2 style="font-size: 3rem;line-height: 0;">Symptoms of Heart Disease</h2>
+            </header>
+        </section>
+
+        <section class="posts">
+            <article>
+                <header>
+                    <h2><a href="#">Chest pain or<br />discomfort</a></h2>
+                </header>
+                <a href="#" class="image fit"><img src="{{ url_for('static', filename='assets/images/pic02.jpg') }}" alt="" /></a>
+                <p>A pressure-like, tight, or burning sensation in the chest that may radiate to the arm, neck, jaw, or back, especially during activity or stress.</p>
+            </article>
+            <article>
+                <header>
+                    <h2><a href="#">Shortness of<br />breath</a></h2>
+                </header>
+                <a href="#" class="image fit"><img src="{{ url_for('static', filename='assets/images/pic03.jpg') }}" alt="" /></a>
+                <p>Uncomfortable breathing or difficulty catching your breath, even at rest or with light physical effort, possibly indicating heart failure or poor circulation.</p>
+            </article>
+            <article>
+                <header>
+                    <h2><a href="#">Fatigue or weakness</a></h2>
+                </header>
+                <a href="#" class="image fit"><img src="{{ url_for('static', filename='assets/images/pic04.jpg') }}" alt="" /></a>
+                <p>Persistent, unexplained tiredness or exhaustion, even with simple tasks, suggesting the heart isn’t supplying enough blood.</p>
+            </article>
+            <article>
+                <header>
+                    <h2><a href="#">Irregular heartbeat</a></h2>
+                </header>
+                <a href="#" class="image fit"><img src="{{ url_for('static', filename='assets/images/pic05.jpg') }}" alt="" /></a>
+                <p>A sensation of fluttering, racing, or skipping beats often noticeable in the chest or throat.</p>
+            </article>
+            <article>
+                <header>
+                    <h2><a href="#">Dizziness or<br />Lightheadedness</a></h2>
+                </header>
+                <a href="#" class="image fit"><img src="{{ url_for('static', filename='assets/images/pic06.jpg') }}" alt="" /></a>
+                <p>Spinning sensation or near-fainting caused by reduced blood flow to the brain.</p>
+            </article>
+            <article>
+                <header>
+                    <h2><a href="#">Swelling in Legs,<br />Ankles, or Feet</a></h2>
+                </header>
+                <a href="#" class="image fit"><img src="{{ url_for('static', filename='assets/images/pic07.jpg') }}" alt="" /></a>
+                <p>Fluid accumulation in the lower body, usually due to the heart’s reduced circulation ability.</p>
+            </article>
+        </section>
+
+        <!-- Causes Section -->
+        <section class="post">
+            <header class="major">
+                <h3 style="font-size: 3rem;line-height: 0;">Causes of Heart Disease</h3>
+            </header>
+        </section>
+
+        <section class="posts">
+            <article>
+                <header>
+                    <h2><a href="#">High Blood Pressure<br />(Hypertension)</a></h2>
+                </header>
+                <a href="#" class="image fit"><img src="{{ url_for('static', filename='assets/images/pic08.jpg') }}" alt="" /></a>
+                <p>Persistent high blood pressure forces the heart to work harder, damaging arteries and increasing the risk of heart attack and stroke.</p>
+            </article>
+            <article>
+                <header>
+                    <h2><a href="#">High Cholesterol<br />Levels</a></h2>
+                </header>
+                <a href="#" class="image fit"><img src="{{ url_for('static', filename='assets/images/pic09.jpg') }}" alt="" /></a>
+                <p>Too much LDL cholesterol causes plaque buildup inside arteries, reducing blood flow and increasing heart disease risk.</p>
+            </article>
+            <article>
+                <header>
+                    <h2><a href="#">Smoking and Tobacco Use</a></h2>
+                </header>
+                <a href="#" class="image fit"><img src="{{ url_for('static', filename='assets/images/pic10.jpg') }}" alt="" /></a>
+                <p>Tobacco smoke contains chemicals that injure blood vessels and raise the risk of heart disease.</p>
+            </article>
+            <article>
+                <header>
+                    <h2><a href="#">Diabetes</a></h2>
+                </header>
+                <a href="#" class="image fit"><img src="{{ url_for('static', filename='assets/images/pic11.jpg') }}" alt="" /></a>
+                <p>High blood sugar from diabetes damages blood vessels and nerves, especially those controlling the heart.</p>
+            </article>
+            <article>
+                <header>
+                    <h2><a href="#">Obesity and<br />Inactivity</a></h2>
+                </header>
+                <a href="#" class="image fit"><img src="{{ url_for('static', filename='assets/images/pic12.jpg') }}" alt="" /></a>
+                <p>Excess weight and lack of exercise raise the risk of heart disease by worsening blood pressure, cholesterol, and sugar levels.</p>
+            </article>
+            <article>
+                <header>
+                    <h2><a href="#">Genetics<br />and Family History</a></h2>
+                </header>
+                <a href="#" class="image fit"><img src="{{ url_for('static', filename='assets/images/pic13.jpg') }}" alt="" /></a>
+                <p>Having close relatives with heart disease raises your own risk, especially if combined with poor lifestyle habits.</p>
+            </article>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <div id="copyright">
+        <ul>
+            <li>&copy; Veenah Ganesh</li>
+            <li>Heart Disease Prediction</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+</body>
+</html>
